@@ -1,0 +1,146 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+ul,
+ol {
+  list-style: none;
+}
+.view-port {
+  background: #e5e2e1;
+  width: 720px;
+  margin: 0 auto;
+  position: relative;
+  height: 600px;
+  opacity: 0.95;
+  border-radius: 5px;
+}
+.view-port::before,
+.view-port::after {
+  width: 0;
+  content: "";
+  clear: both;
+  zoom: 1;
+}
+.view-port .nav {
+  display: inline-block;
+  width: 50px;
+  height: 100%;
+  background: #2f2d2c;
+  opacity: 0.95;
+  float: left;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.view-port .nav .nav-btn {
+  width: 100%;
+  height: 100%;
+}
+.view-port .nav .nav-btn > li {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 40px;
+  overflow: hidden;
+}
+.view-port .chat-box {
+  display: inline-block;
+  width: 200px;
+  height: 100%;
+  background: #d8d4d3;
+  opacity: 0.95;
+  float: left;
+}
+.view-port .chat-box .search-bar {
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  width: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.view-port .chat-box .search-bar .search-box {
+  display: inline-block;
+  background: #e5e2e1;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #908c8b;
+  position: relative;
+  font-size: 12px;
+  padding-left: 5px;
+}
+.view-port .chat-box .search-bar > button {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.view-port .chat-box .search-bar .icon-search {
+  position: absolute;
+  display: inline-block;
+  right: 42px;
+  color: #908c8b;
+}
+.view-port .chat-box .contact-list > li {
+  padding: 10px;
+  height: 50px;
+  display: flex;
+  transition: 500ms linear;
+}
+.view-port .chat-box .contact-list > li:active {
+  background: #fff;
+  opacity: 0.95;
+  transform: scale(0.95);
+}
+.view-port .chat-box .contact-list > li .avatar {
+  height: 100%;
+  width: 20%;
+  flex: 1;
+  background: url("../images/avatar.png") no-repeat center center;
+}
+.view-port .chat-box .contact-list > li .detail {
+  flex: 3;
+  padding: 5px;
+  padding-right: 30px;
+  position: relative;
+}
+.view-port .chat-box .contact-list > li .detail .name,
+.view-port .chat-box .contact-list > li .detail .lastest {
+  display: inline-block;
+  overflow: hidden;
+  height: 20px;
+  line-height: 20px;
+}
+.view-port .chat-box .contact-list > li .detail .name {
+  font-size: 12px;
+}
+.view-port .chat-box .contact-list > li .detail .lastest {
+  color: #a59a98;
+  font-size: 10px;
+}
+.view-port .chat-box .contact-list > li .detail > .time,
+.view-port .chat-box .contact-list > li .detail .fix {
+  position: absolute;
+  right: 2px;
+  font-size: 10px;
+}
+.view-port .chat-box .contact-list > li .detail .time {
+  top: 10px;
+}
+.view-port .chat-box .contact-list > li .detail .fix {
+  right: 20px;
+  top: 30px;
+  text-align: left;
+}
